@@ -1,0 +1,78 @@
+.aaa{background: rgb(18,3,38);
+  background: radial-gradient(circle, rgba(18,3,38,1) 9%, rgba(2,0,36,1) 51%, rgba(15,6,27,1) 81%);}
+
+.aaaa, #aaaa{background: rgb(18,3,38);
+  background: radial-gradient(circle, rgba(18,3,38,1) 9%, rgba(2,0,36,1) 51%, rgba(15,6,27,1) 81%);}
+
+#skillBox:hover{
+  transform : translateY(-10px);
+  box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
+ 
+}
+#skillBox{
+  transition: all 0.5s ease-in-out;
+   
+}
+#desc{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#refs:hover{
+    color:aqua
+}
+#refs {
+  transition: color 0.3s;
+}
+.menu-item {
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: aqua;
+}
+
+@media only screen and (max-width: 768px) {
+  #isMobile {
+    display: none;
+  }
+  #isLap{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  #isMobile {
+    display: block;
+  }
+  #isLap{
+    display: none;
+  }
+}
+
+
+/* export const darkTheme = {
+  bg:"#1C1C27",
+  bgLight: "#1C1E27",
+  primary:"#854CE6",
+  text_primary:"#F2F3F4",
+  text_secondary:"#b1b2b3",
+  card:"#171721",
+  card_light: '#191924',
+  button:"#854CE6",
+  white:"#FFFFFF",
+  black:"#000000",
+}
+
+export const lightTheme = {
+  bg:"#FFFFFF",
+  bgLight: "#f0f0f0",
+  primary:"#be1adb",
+  text_primary:"#111111",
+  text_secondary:"#48494a",
+  card:"#FFFFFF",
+  button:"#5c5b5b",
+} */
