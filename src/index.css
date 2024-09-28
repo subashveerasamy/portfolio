@@ -52,7 +52,10 @@
     display: none;
   }
 }
-
+.navBarWidth {
+  max-width: 100vw;
+}
+  
 
 /* export const darkTheme = {
   bg:"#1C1C27",
