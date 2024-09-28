@@ -75,8 +75,8 @@ export default function DenseAppBar() {
   ];
 
   return (
-    <div className='aaaa' style={{width:"100vw"}}>
-      <div style={{ cursor: "pointer" }}>
+    <div className='aaaa' >
+      <div style={{ cursor: "pointer", maxWidth:"100vw" }}>
       <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="fixed">
