@@ -76,10 +76,10 @@ export default function DenseAppBar() {
 
   return (
     <div className='aaaa' >
-      <div style={{ cursor: "pointer", maxWidth:"100vw" }}>
+      <div style={{ cursor: "pointer" }}>
       <ThemeProvider theme={theme}>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed">
+        <AppBar position="fixed" className="navBarWidth" >
           <Toolbar variant="dense" sx={{ justifyContent: 'space-between', minHeight: 70 }}>
             <Typography variant="h6" color="inherit" component="div" style={{ width: isMobile ? "auto" : "10vw" }}>
               Portfolio
