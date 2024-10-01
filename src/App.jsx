@@ -75,7 +75,6 @@ export default function DenseAppBar() {
   ];
 
   return (
-<<<<<<< HEAD
     <div className='aaaa' style={{overflow:"hidden"}}>
      <div style={{ cursor: "pointer" }}>
   <ThemeProvider theme={theme}>
@@ -105,55 +104,6 @@ export default function DenseAppBar() {
                 }}
               >
                 <List>
-=======
-    <div className='aaaa' >
-      <div style={{ cursor: "pointer" }}>
-      <ThemeProvider theme={theme}>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed" className="navBarWidth" >
-          <Toolbar variant="dense" sx={{ justifyContent: 'space-between', minHeight: 70 }}>
-            <Typography variant="h6" color="inherit" component="div" style={{ width: isMobile ? "auto" : "10vw" }}>
-              Portfolio
-            </Typography>
-            {isMobile ? (
-              <>
-                <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-                  <MenuIcon />
-                </IconButton>
-                <Drawer
-                  anchor='top'
-                  open={drawerOpen}
-                  onClose={toggleDrawer(false)}
-                  PaperProps={{
-                    sx: {
-                      top: '70px', // Adjust this value based on your AppBar height
-                      position: 'absolute',
-                      width: '100%',
-                      backgroundColor: theme.palette.primary.main,
-                      color: 'white',
-                    },
-                  }}
-                >
-                  <List>
-                    {menuItems.map((item, index) => (
-                      <ListItem
-                      button="true"
-                        key={index}
-                        onClick={() => { handleScroll(item.ref); setDrawerOpen(false); }}
-                        sx={{ cursor: 'pointer', transition: 'background-color 0.3s' }}
-                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#619bad'}
-                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'inherit'}
-                      >
-                        <ListItemText primary={item.text} />
-                      </ListItem>
-                    ))}
-                  </List>
-                </Drawer>
-              </>
-            ) : (
-              <div className='d-flex justify-content-between align-items-center w-75'>
-                <div className='d-flex justify-content-evenly w-50' style={{ cursor: "pointer" }}>
->>>>>>> 1c3b3b9eb982472f8ac02286c5bed84294b3542d
                   {menuItems.map((item, index) => (
                     <ListItem
                       button="true"
