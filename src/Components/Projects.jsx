@@ -26,10 +26,21 @@ const Projects = () => {
             "title" : "Fit-Tracker Application",
             "date" : "Aprl 21 - August 13",
             "description" : 
-              "I developed a full-stack task management app with React.js, Bootstrap, Material UI, Redux, and Context API on the front-end, and Node.js, Express.js, and MongoDB on the back-end. Users can sign up, log in, add workout, and track past status and burned colorie difference. Compare past seven days burned colories and monthly how much colories burned for each part and get particular date workouts and burned colories details. ",
+              "I developed a full-stack fitness tracker app with React.js, Bootstrap, Material UI, Redux, and Context API on the front-end, and Node.js, Express.js, and MongoDB on the back-end. Users can sign up, log in, add workout, and track past status and burned colorie difference. Compare past seven days burned colories and monthly how much colories burned for each part and get particular date workouts and burned colories details. ",
             "image" : "/fittrack.png",
             "tags" : ["React.js","Node.js","MongoDb","Bootstrap"],
             "Webapp" : "https://subashfsdfittrack.netlify.app/",
+           
+        },
+        {
+            "id" : 1,
+            "title" : "E-Commerce Application",
+            "date" : "sept 21 - sept 30",
+            "description" : 
+              "I developed a full-stack E-Commerce web app with React.js, Bootstrap, Material UI, and Context API on the front-end, and Node.js, Express.js, and MongoDB on the back-end. Users can sign up, log in, add product to cart what you want,In cart page can order products, and track order status and update delivery address after delivered user can review about product. If user faces any issues , user can raise query.  ",
+            "image" : "/ecommerce.png",
+            "tags" : ["React.js","Node.js","MongoDb","Bootstrap"],
+            "Webapp" : "https://subashfsdecommerce.netlify.app/",
            
         }
     ]
@@ -43,10 +54,10 @@ const Projects = () => {
         <div className="text-light"><h2>Projects</h2></div>
         <Description className=' mt-3 ps-5 px-5'>Here are some of my skills on which I have been Working!</Description>
 
-        <div>
+        <div className='d-flex'>
             {
                 projects.map((project,index)=>(
-                    <div className='container mt-5' id='skillBox'  key={index} style={{ border: "1px solid white", borderRadius: "10px", boxShadow: "0 0 20px rgba(0, 255, 255, 0.6 )", minWidth:"10rem",maxWidth:"22rem", cursor:"pointer" }}>
+                    <div className='container mt-5 mx-3' id='skillBox'  key={index} style={{ border: "1px solid white", borderRadius: "10px", boxShadow: "0 0 20px rgba(0, 255, 255, 0.6 )", minWidth:"10rem",maxWidth:"22rem", cursor:"pointer" }}>
                         
                             <div className='p-3 '>
                                 <div className='bg-light p-2 mt-2' style={{borderRadius:"15px"}}> 
