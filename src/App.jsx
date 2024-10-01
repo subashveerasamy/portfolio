@@ -75,67 +75,68 @@ export default function DenseAppBar() {
   ];
 
   return (
-    <div className='aaaa'>
-      <div style={{ cursor: "pointer" }}>
-      <ThemeProvider theme={theme}>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed">
-          <Toolbar variant="dense" sx={{ justifyContent: 'space-between', minHeight: 70 }}>
-            <Typography variant="h6" color="inherit" component="div" style={{ width: isMobile ? "auto" : "10vw" }}>
-              Portfolio
-            </Typography>
-            {isMobile ? (
-              <>
-                <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-                  <MenuIcon />
-                </IconButton>
-                <Drawer
-                  anchor='top'
-                  open={drawerOpen}
-                  onClose={toggleDrawer(false)}
-                  PaperProps={{
-                    sx: {
-                      top: '70px', // Adjust this value based on your AppBar height
-                      position: 'absolute',
-                      width: '100%',
-                      backgroundColor: theme.palette.primary.main,
-                      color: 'white',
-                    },
-                  }}
-                >
-                  <List>
-                    {menuItems.map((item, index) => (
-                      <ListItem
-                      button="true"
-                        key={index}
-                        onClick={() => { handleScroll(item.ref); setDrawerOpen(false); }}
-                        sx={{ cursor: 'pointer', transition: 'background-color 0.3s' }}
-                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#619bad'}
-                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'inherit'}
-                      >
-                        <ListItemText primary={item.text} />
-                      </ListItem>
-                    ))}
-                  </List>
-                </Drawer>
-              </>
-            ) : (
-              <div className='d-flex justify-content-between align-items-center w-75'>
-                <div className='d-flex justify-content-evenly w-50' style={{ cursor: "pointer" }}>
+    <div className='aaaa' style={{overflow:"hidden"}}>
+     <div style={{ cursor: "pointer" }}>
+  <ThemeProvider theme={theme}>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="fixed" sx={{ width: '100vw',top:0, left:0 }}>
+        <Toolbar variant="dense" sx={{ justifyContent: 'space-between', minHeight: 70 }}>
+          <Typography variant="h6" color="inherit" component="div" style={{ width: isMobile ? "auto" : "10vw" }}>
+            Portfolio
+          </Typography>
+          {isMobile ? (
+            <>
+              <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
+                <MenuIcon />
+              </IconButton>
+              <Drawer
+                anchor='top'
+                open={drawerOpen}
+                onClose={toggleDrawer(false)}
+                PaperProps={{
+                  sx: {
+                    top: '70px',
+                    position: 'absolute',
+                    width: '100%',
+                    backgroundColor: theme.palette.primary.main,
+                    color: 'white',
+                  },
+                }}
+              >
+                <List>
                   {menuItems.map((item, index) => (
-                    <div id='refs' key={index} onClick={() => handleScroll(item.ref)}>{item.text}</div>
+                    <ListItem
+                      button="true"
+                      key={index}
+                      onClick={() => { handleScroll(item.ref); setDrawerOpen(false); }}
+                      sx={{ cursor: 'pointer', transition: 'background-color 0.3s' }}
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#619bad'}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'inherit'}
+                    >
+                      <ListItemText primary={item.text} />
+                    </ListItem>
                   ))}
-                </div>
-                <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} style={{ width: isMobile ? "auto" : "10vw" }}>
-                  <Avatar alt="Remy Sharp" src="/profile.jpg" />
-                </IconButton>
+                </List>
+              </Drawer>
+            </>
+          ) : (
+            <div className='d-flex justify-content-between align-items-center w-75'>
+              <div className='d-flex justify-content-evenly w-50' style={{ cursor: "pointer" }}>
+                {menuItems.map((item, index) => (
+                  <div id='refs' key={index} onClick={() => handleScroll(item.ref)}>{item.text}</div>
+                ))}
               </div>
-            )}
-          </Toolbar>
-        </AppBar>
-      </Box>
-    </ThemeProvider>
-      </div>
+              <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} style={{ width: isMobile ? "auto" : "10vw" }}>
+                <Avatar alt="Remy Sharp" src="/profile.jpg" />
+              </IconButton>
+            </div>
+          )}
+        </Toolbar>
+      </AppBar>
+    </Box>
+  </ThemeProvider>
+</div>
+
       <Container id='aaaa' ref={aboutRef} className='mt-5 p-5 d-flex flex-wrap-reverse justify-content-around align-items-center' >
         <div className='mt-4'>
           <h1 className='text-white'>Hello, I'm <span className='text-warning'>Subash Veerasamy</span></h1><br />
@@ -182,7 +183,7 @@ export default function DenseAppBar() {
       <div >
         <Certifications />
       </div>
-      <div ref={projectsRef}>
+      <div ref={projectsRef} >
         <Projects />
       </div>
       <div ref={educationRef}>
@@ -190,14 +191,14 @@ export default function DenseAppBar() {
       </div>
       <div ref={contactRef} id='aaaa'>
         <Contact />
-        <div  className='d-flex pb-5 flex-column align-items-center'>
+        <div  className='d-flex pb-5 flex-column align-items-center' >
       <div className='text-warning mt-5 ' style={{fontSize:"25px", fontWeight:"500"}}>Subash Veerasamy</div>
-      <div className="d-flex mt-4" style={{ cursor: "pointer" }}>
+      <div className="d-flex justify-content-between mt-4" style={{ cursor: "pointer", minWidth:"20rem"}}>
         {menuItems.map((item, index) => (
           <div
             key={index}
             id='refs'
-            className="menu-item mx-3"
+            className="menu-item"
             onClick={() => handleScroll(item.ref)}
           >
             {item.text}

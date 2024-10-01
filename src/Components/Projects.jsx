@@ -46,7 +46,7 @@ const Projects = () => {
         <div>
             {
                 projects.map((project,index)=>(
-                    <div className='container mt-5 ' id='skillBox'  key={index} style={{ border: "1px solid white", borderRadius: "10px", boxShadow: "0 0 20px rgba(0, 255, 255, 0.6 )", maxWidth: "25rem", cursor:"pointer" }}>
+                    <div className='container mt-5' id='skillBox'  key={index} style={{ border: "1px solid white", borderRadius: "10px", boxShadow: "0 0 20px rgba(0, 255, 255, 0.6 )", minWidth:"10rem",maxWidth:"22rem", cursor:"pointer" }}>
                         
                             <div className='p-3 '>
                                 <div className='bg-light p-2 mt-2' style={{borderRadius:"15px"}}> 
@@ -54,11 +54,11 @@ const Projects = () => {
                                 </div> 
                                 </div>
 
-                                <div className='d-flex justify-content-evenly'>
+                                <div className='d-flex flex-wrap justify-content-evenly'>
                                    {
                                     project.tags.map((tags, index) =>{
                                         return(
-                                            <div className='text-primary ' key={index} style={{borderRadius:"15px", fontSize:"13px", padding:"4px" , paddingLeft:"11px", paddingRight:"11px", background:"#343249"}}>{tags}</div>
+                                            <div className='text-primary mt-2' key={index} style={{borderRadius:"15px", fontSize:"13px", padding:"4px" , paddingLeft:"11px", paddingRight:"11px", background:"#343249"}}>{tags}</div>
                                         )
                                     })
                                    }
