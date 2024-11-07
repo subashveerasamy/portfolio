@@ -7,7 +7,7 @@ const Certifications = () => {
         "role": "Full Stack Developer (MERN) - GUVI Technology",
         "company": "GUVI Geek Networks, IITM Research Park",
         "date": "May 2024 - present",
-        "desc": "Currently pursuing the Full Stack Development (MERN) course from GUVI Zen Class, working towards earning a Professional Certificate. Developing a strong skill set in both front-end and back-end development.",
+        "desc": "Completed the Full Stack Development (MERN) course from GUVI Zen Class and earned a Professional Certificate. Developed a strong skill set in both front-end and back-end development.",
         "skills": [
             "HTML",
             "CSS",
@@ -19,14 +19,14 @@ const Certifications = () => {
             "Advance JS",
             "MongoDB"
         ],
-        "doc": "https://i.ibb.co/qCxc1nT/Full-stack-Development-certification.jpg"
+        "doc": "https://drive.google.com/file/d/1JcJ7nU99yJ4Ude2hBiUz5pryOAKC3F7r/view?usp=drive_link"
     }]
 
     return (
         <div id='aaaa' className='p-5 d-flex flex-column align-items-center' style={{ height: "auto" }}>
             <div><div className='text-center text-light' style={{ fontSize: "45px", fontWeight: "600", color: "#F2F3F4", fontFamily: "Space Grotesk, sans-serif" }}>Certifications</div></div>
             <div className=' mt-5' style={{ fontSize: "18px", maxWidth: "600px", textAlign: "center", color: "#b1b2b3" }}>
-                Currently enrolled MERN Full Stack Developer course at GUVI Technology,for building full-stack web applications.
+                Completed the MERN Full Stack Developer course at GUVI Technology,for building full-stack web applications.
             </div>
             <div>
                 {
@@ -53,7 +53,10 @@ const Certifications = () => {
                                     )}</div>
                                     </div>
                                 </div>
-                               
+                               <div className='mt-3'>
+                               <a className='p-3' style={{textDecoration:"underline"}}  href="https://drive.google.com/file/d/1JcJ7nU99yJ4Ude2hBiUz5pryOAKC3F7r/view?usp=drive_link"  > Certificate </a>
+                                
+                                     </div>
                                
                             </div>
                         </div>
