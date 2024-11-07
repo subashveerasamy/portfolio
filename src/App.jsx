@@ -157,7 +157,7 @@ export default function DenseAppBar() {
           <br />
           <p className='text-white'>I like to craft solid and Scalable products with great user experiences.</p><br />
           <SocialIcon className='m-2' network="linkedin" url='https://www.linkedin.com/in/subash-veerasamy-544972244/' style={{ width: 40, height: 40 }} />
-          <SocialIcon className='m-2' network="github" url='https://github.com/floshSH' style={{ width: 40, height: 40 }} />
+          <SocialIcon className='m-2' network="github" url='https://github.com/subashveerasamy' style={{ width: 40, height: 40 }} />
           <SocialIcon className='m-2' network="instagram" url='https://www.instagram.com/subash_f.l.o.s.h/' style={{ width: 40, height: 40 }} />
         </div>
         <div>
