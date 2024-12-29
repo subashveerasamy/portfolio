@@ -67,6 +67,25 @@ const Projects = () => {
             "tags" : ["HTML","CSS","JavaScript","Bootstrap", "React"],
             "Webapp" : "https://subashfsdtilematch.netlify.app/",
            
+        },{
+            "id" : 4,
+            "title" : "User management APP",
+            "date" : "aug 21 - aug 22",
+            "description" : "I developed a user management app using HTML, CSS, Mock API, Bootstrap, react, and fetch API. This app is used for managing users data and we can add new user , update user's details and also we can delete particular user",
+            "image" : "/usermanagementapp.png",
+            "source_code":"https://github.com/subashveerasamy/day30task.git",
+            "tags" : ["Mock API","JavaScript","fetch API", "React"],
+            "Webapp" : "https://subashfsdday30.netlify.app/",
+        },
+        {
+            "id" : 5,
+            "title" : "Task management APP",
+            "date" : "aug 24 - aug 27",
+            "description" : "I developed a Task Management app using HTML, CSS, MongoDb, Bootstrap, React, Express, Node.js and Axios. This app helps users manage their tasks effectively by allowing them to add new tasks, update task details, and delete tasks. It provides a user-friendly interface for tracking task progress and ensuring productivity.",
+            "image" : "/TaskManagement.png",
+            "source_code":"https://github.com/subashveerasamy/task-management-app-FE.git",
+            "tags" : ["Mongo DB","React.js","Express", "Node.js"],
+            "Webapp" : "https://subashfsdtaskmanagemant.netlify.app/",
         }
     ]
    
