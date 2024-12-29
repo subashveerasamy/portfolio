@@ -74,7 +74,7 @@ const Projects = () => {
             "description" : "I developed a user management app using HTML, CSS, Mock API, Bootstrap, react, and fetch API. This app is used for managing users data and we can add new user , update user's details and also we can delete particular user",
             "image" : "/usermanagementapp.png",
             "source_code":"https://github.com/subashveerasamy/day30task.git",
-            "tags" : ["Mock API","JavaScript","fetch API", "React"],
+            "tags" : ["MongoDb","JavaScript","Express", "React"],
             "Webapp" : "https://subashfsdday30.netlify.app/",
         },
         {
