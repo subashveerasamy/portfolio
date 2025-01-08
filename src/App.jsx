@@ -65,6 +65,11 @@ export default function DenseAppBar() {
     }
     setDrawerOpen(open);
   };
+  
+  const handleResume=()=>{
+   const url="https://drive.google.com/file/d/1dOrfv8d6-uajV6IU_vfPzWBBJ7dF8ryQ/view?usp=drive_link";
+    window.open(url, '_blank');
+  }
 
   const menuItems = [
     { text: 'About', ref: aboutRef },
@@ -137,7 +142,7 @@ export default function DenseAppBar() {
   </ThemeProvider>
 </div>
 
-      <Container id='aaaa' ref={aboutRef} className='mt-5 p-5 d-flex flex-wrap-reverse justify-content-around align-items-center' >
+      <Container id='aaaa' ref={aboutRef} className='mt-5 pb-1 p-5 d-flex flex-wrap-reverse justify-content-around align-items-center' >
         <div className='mt-4'>
           <h1 className='text-white'>Hello, I'm <span className='text-warning'>Subash Veerasamy</span></h1><br />
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -159,6 +164,10 @@ export default function DenseAppBar() {
           <SocialIcon className='m-2' network="linkedin" url='https://www.linkedin.com/in/subash-veerasamy-544972244/' target='_blank' style={{ width: 40, height: 40 }} />
           <SocialIcon className='m-2' network="github" url='https://github.com/subashveerasamy' target='_blank' style={{ width: 40, height: 40 }} />
           <SocialIcon className='m-2' network="instagram" url='https://www.instagram.com/subash_f.l.o.s.h/' target='_blank' style={{ width: 40, height: 40 }} />
+          <br />
+          <div className='btn btn-warning mt-5' onClick={handleResume}>
+                Resume
+          </div>
         </div>
         <div>
           <div>
