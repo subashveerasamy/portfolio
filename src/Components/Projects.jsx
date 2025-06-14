@@ -69,13 +69,13 @@ const Projects = () => {
            
         },{
             "id" : 4,
-            "title" : "User management APP",
+            "title" : "Army Asset management",
             "date" : "aug 21 - aug 22",
-            "description" : "I developed a user management app using HTML, CSS, Mock API, Bootstrap, react, and fetch API. This app is used for managing users data and we can add new user , update user's details and also we can delete particular user",
+            "description" : "I built a Military Asset Management App using HTML, CSS, Bootstrap, React, Mock API, and Fetch API. It streamlines asset tracking by enabling users to add, update, and remove assets, ensuring efficient inventory management and operational readiness.",
             "image" : "/usermanagementapp.png",
-            "source_code":"https://github.com/subashveerasamy/day30task.git",
+            "source_code":"https://github.com/subashveerasamy/militaryAssetManagementSystem.git",
             "tags" : ["MongoDb","JavaScript","Express", "React"],
-            "Webapp" : "https://subashfsdday30.netlify.app/",
+            "Webapp" : "https://auramilitaryasset.netlify.app",
         },
         {
             "id" : 5,
@@ -90,6 +90,12 @@ const Projects = () => {
     ]
    
     const handleProject = (project) => () => {
+        if(project.title === "Army Asset management"){
+            alert(`
+                username: "johndoe"
+                password: "Subash@123"
+                `)
+        }
         window.open(project.Webapp, '_blank');
     };
     const handleSourceCode = (project) => () => {
